@@ -117,7 +117,7 @@ CREATE TABLE `tbl_gradelevel` (
   `gradelevel_id` int NOT NULL AUTO_INCREMENT,
   `glevel_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`gradelevel_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,6 +127,7 @@ CREATE TABLE `tbl_gradelevel` (
 LOCK TABLES `tbl_gradelevel` WRITE;
 /*!40000 ALTER TABLE `tbl_gradelevel` DISABLE KEYS */;
 INSERT INTO `tbl_gradelevel` VALUES
+(0,'Non-Student'),
 (1,'Grade 1'),
 (2,'Grade 2'),
 (6,'Grade 3'),
@@ -170,14 +171,14 @@ INSERT INTO `tbl_members` VALUES
 (12,1202743617,'../uploads/admin.png','Jeffrey','ZAPANTA','Tan','','John','+639605895653',2,'student','active',NULL),
 (13,285224227,'../uploads/staff.png','QUEENIE','DELAMBOTIQUE','NEQUINTO','','Pamela','+639605895653',1,'student','inactive',NULL),
 (14,1296344467,'../uploads/student.png','Junil','D.','Todelodo','','merasha','+639605895653',1,'student','active',NULL),
-(16,301676067,'../uploads/daily.png','QUEENIE','DELAMBOTIQUE','NEQUINTO','','','1',1,'staff','active',NULL),
-(26,1111111111,'../uploads/1.webp','QUEENIE','DELAMBOTIQUE','NEQUINTO','im visit you','','2',0,'visitor','','Approved'),
-(27,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','Visiting','','3',0,'visitor','','Approved'),
-(28,0,'../uploads/download.jpg','raymond','a','toling','my kukunin lang','','4',0,'visitor','','Pending'),
-(29,0,'../uploads/download (1).jpg','ryan','e','zuwa','may pick apin','','5',0,'visitor','','Pending'),
-(30,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','sample','','7',0,'visitor','','Pending'),
-(33,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','asdasd','','',0,'visitor','','Pending'),
-(35,0,'../uploads/11.jpg','123','12313','1233','12312','','',0,'visitor','','Pending'),
+(16,301676067,'../uploads/daily.png','QUEENIE','DELAMBOTIQUE','NEQUINTO','','','2',1,'staff','active',NULL),
+(26,1111111111,'../uploads/1.webp','QUEENIE','DELAMBOTIQUE','NEQUINTO','im visit you','','2',0,'visitor','inactive','Approved'),
+(27,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','Visiting','','3',0,'visitor','inactive','Approved'),
+(28,0,'../uploads/download.jpg','raymond','a','toling','my kukunin lang','','4',0,'visitor','inactive','Pending'),
+(29,0,'../uploads/download (1).jpg','ryan','e','zuwa','may pick apin','','5',0,'visitor','active','Pending'),
+(30,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','sample','','7',0,'visitor','inactive','Pending'),
+(33,0,'../uploads/11.jpg','JOHN JUSTINE','ZAPANTA','FERANIL','asdasd','','',0,'visitor','inactive','Pending'),
+(35,0,'../uploads/11.jpg','123','12313','1233','12312','','',0,'visitor','inactive','Pending'),
 (36,1202743617,'../uploads/2x2.png','JOHN JUSTINE','ZAPANTA','FERANIL','','anicita','123321123',1,'student','active',NULL);
 /*!40000 ALTER TABLE `tbl_members` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -191,4 +192,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-22  5:04:12
+-- Dump completed on 2023-05-22  8:21:20
